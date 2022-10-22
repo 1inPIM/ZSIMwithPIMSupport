@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<VisualGDBProjectSettings2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ConfigurationName>Debug</ConfigurationName>
+  <Project xsi:type="com.visualgdb.project.linux">
+    <CustomSourceDirectories>
+      <Directories />
+      <PathStyle>RemoteUnix</PathStyle>
+    </CustomSourceDirectories>
+    <AutoProgramSPIFFSPartition>true</AutoProgramSPIFFSPartition>
+    <BuildHost>
+      <HostName>10.211.55.10</HostName>
+      <Transport>SSH</Transport>
+      <UserName>vine</UserName>
+    </BuildHost>
+    <MainSourceTransferCommand>
+      <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+      <RemoteHost>
+        <HostName>192.168.47.130</HostName>
+        <Transport>SSH</Transport>
+        <UserName>vine</UserName>
+      </RemoteHost>
+      <LocalDirectory>$(ProjectDir)</LocalDirectory>
+      <RemoteDirectory>/tmp/VisualGDB/$(ProjectDirUnixStyle)</RemoteDirectory>
+      <FileMasks>
+        <string>*.cpp</string>
+        <string>*.h</string>
+        <string>*.hpp</string>
+        <string>*.c</string>
+        <string>*.cc</string>
+        <string>*.cxx</string>
+        <string>*.mak</string>
+        <string>Makefile</string>
+        <string>*.txt</string>
+        <string>*.cmake</string>
+        <string>*.cfg</string>
+      </FileMasks>
+      <TransferNewFilesOnly>true</TransferNewFilesOnly>
+      <IncludeSubdirectories>true</IncludeSubdirectories>
+      <SelectedDirectories />
+      <DeleteDisappearedFiles>true</DeleteDisappearedFiles>
+      <ApplyGlobalExclusionList>true</ApplyGlobalExclusionList>
+      <Extension>
+        <Direction>Outgoing</Direction>
+        <SkipMountPoints>false</SkipMountPoints>
+        <OverwriteTrigger>LocalCache</OverwriteTrigger>
+      </Extension>
+    </MainSourceTransferCommand>
+    <AllowChangingHostForMainCommands>false</AllowChangingHostForMainCommands>
+    <SkipBuildIfNoSourceFilesChanged>false</SkipBuildIfNoSourceFilesChanged>
+    <IgnoreFileTransferErrors>false</IgnoreFileTransferErrors>
+    <RemoveRemoteDirectoryOnClean>false</RemoveRemoteDirectoryOnClean>
+    <SkipDeploymentTests>false</SkipDeploymentTests>
+    <MainSourceDirectoryForLocalBuilds>$(ProjectDir)</MainSourceDirectoryForLocalBuilds>
+  </Project>
+  <Build xsi:type="com.visualgdb.build.make">
+    <BuildLogMode xsi:nil="true" />
+    <ToolchainID>
+      <ID>com.sysprogs.toolchain.default-gcc</ID>
+      <Version>
+        <Revision>0</Revision>
+      </Version>
+    </ToolchainID>
+    <MakeFilePathRelativeToSourceDir>Makefile</MakeFilePathRelativeToSourceDir>
+    <MakeConfigurationName>Debug</MakeConfigurationName>
+    <MakeCommandTemplate>
+      <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+      <Command>$(ToolchainMake)</Command>
+      <Arguments>$(ToolchainMakeArgs)</Arguments>
+      <WorkingDirectory>$(BuildDir)</WorkingDirectory>
+      <BackgroundMode xsi:nil="true" />
+    </MakeCommandTemplate>
+  </Build>
+  <CustomBuild>
+    <PreSyncActions />
+    <PreBuildActions />
+    <PostBuildActions />
+    <PreCleanActions />
+    <PostCleanActions />
+  </CustomBuild>
+  <CustomDebug>
+    <PreDebugActions>
+      <CustomActionBase xsi:type="CommandLineAction">
+        <SkipWhenRunningCommandList>true</SkipWhenRunningCommandList>
+        <RemoteHost>
+          <HostName>BuildMachine</HostName>
+          <Transport>BuiltinShortcut</Transport>
+        </RemoteHost>
+        <Command>./zsim_harness</Command>
+        <Arguments>/tmp/VisualGDB/c/Users/vine/source/repos/zsim/zsim/simple.cfg</Arguments>
+        <WorkingDirectory>/tmp/VisualGDB/c/Users/vine/source/repos/zsim/zsim_harness/Debug</WorkingDirectory>
+        <BackgroundMode>true</BackgroundMode>
+      </CustomActionBase>
+      <CustomActionBase xsi:type="CommandLineAction">
+        <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+        <RemoteHost>
+          <HostName>BuildMachine</HostName>
+          <Transport>BuiltinShortcut</Transport>
+        </RemoteHost>
+        <Command>./zsim_harness</Command>
+        <Arguments>/tmp/VisualGDB/c/Users/vine/source/repos/zsim/zsim/simplepim.cfg</Arguments>
+        <WorkingDirectory>/tmp/VisualGDB/c/Users/vine/source/repos/zsim/zsim_harness/Debug</WorkingDirectory>
+        <BackgroundMode>true</BackgroundMode>
+      </CustomActionBase>
+    </PreDebugActions>
+    <PostDebugActions>
+      <CustomActionBase xsi:type="FileTransferAction">
+        <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+        <SourceHost>
+          <HostName>BuildMachine</HostName>
+          <Transport>BuiltinShortcut</Transport>
+        </SourceHost>
+        <SourceFilePath>/tmp/VisualGDB/c/Users/vine/source/repos/zsim/zsim_harness/Debug/zsim.out</SourceFilePath>
+        <DestinationFilePath>C:\Users\vine\source\repos\zsim\zsim\zsim.out</DestinationFilePath>
+        <OverwriteTrigger>Always</OverwriteTrigger>
+      </CustomActionBase>
+    </PostDebugActions>
+    <DebugStopActions />
+    <BreakMode>Default</BreakMode>
+    <CustomBreakCommand>
+      <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+      <RemoteHost>
+        <HostName>BuildMachine</HostName>
+        <Transport>BuiltinShortcut</Transport>
+      </RemoteHost>
+      <BackgroundMode xsi:nil="true" />
+    </CustomBreakCommand>
+  </CustomDebug>
+  <CustomShortcuts>
+    <Shortcuts />
+    <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
+  </CustomShortcuts>
+  <UserDefinedVariables />
+  <ImportedPropertySheets />
+  <CodeSense>
+    <Enabled>Unknown</Enabled>
+    <ExtraSettings>
+      <HideErrorsInSystemHeaders>true</HideErrorsInSystemHeaders>
+      <SupportLightweightReferenceAnalysis>true</SupportLightweightReferenceAnalysis>
+      <DiscoverySettings>
+        <Mode>Enabled</Mode>
+        <SearchInProjectDir>true</SearchInProjectDir>
+        <SearchInSourceDirs>true</SearchInSourceDirs>
+        <SearchInIncludeSubdirs>true</SearchInIncludeSubdirs>
+        <ExtraSearchDirs>
+          <string>.</string>
+        </ExtraSearchDirs>
+      </DiscoverySettings>
+      <CheckForClangFormatFiles>true</CheckForClangFormatFiles>
+      <FormattingEngine xsi:nil="true" />
+    </ExtraSettings>
+    <CodeAnalyzerSettings>
+      <Enabled>false</Enabled>
+    </CodeAnalyzerSettings>
+  </CodeSense>
+  <Configurations />
+  <ProgramArgumentsSuggestions />
+  <Debug xsi:type="com.visualgdb.debug.remote">
+    <AdditionalStartupCommands>
+      <GDBPreStartupCommands />
+      <GDBStartupCommands>
+        <string>b main</string>
+      </GDBStartupCommands>
+      <GDBFinalizationCommands />
+    </AdditionalStartupCommands>
+    <AdditionalGDBSettings>
+      <Features>
+        <DisableAutoDetection>false</DisableAutoDetection>
+        <UseFrameParameter>false</UseFrameParameter>
+        <SimpleValuesFlagSupported>false</SimpleValuesFlagSupported>
+        <ListLocalsSupported>false</ListLocalsSupported>
+        <ByteLevelMemoryCommandsAvailable>false</ByteLevelMemoryCommandsAvailable>
+        <ThreadInfoSupported>false</ThreadInfoSupported>
+        <PendingBreakpointsSupported>false</PendingBreakpointsSupported>
+        <SupportTargetCommand>false</SupportTargetCommand>
+        <ReliableBreakpointNotifications>false</ReliableBreakpointNotifications>
+      </Features>
+      <EnableSmartStepping>false</EnableSmartStepping>
+      <FilterSpuriousStoppedNotifications>false</FilterSpuriousStoppedNotifications>
+      <ForceSingleThreadedMode>false</ForceSingleThreadedMode>
+      <UseAppleExtensions>false</UseAppleExtensions>
+      <CanAcceptCommandsWhileRunning>false</CanAcceptCommandsWhileRunning>
+      <MakeLogFile>false</MakeLogFile>
+      <IgnoreModuleEventsWhileStepping>true</IgnoreModuleEventsWhileStepping>
+      <UseRelativePathsOnly>false</UseRelativePathsOnly>
+      <ExitAction>KillApp</ExitAction>
+      <DisableDisassembly>false</DisableDisassembly>
+      <ExamineMemoryWithXCommand>false</ExamineMemoryWithXCommand>
+      <StepIntoNewInstanceEntry>main</StepIntoNewInstanceEntry>
+      <ExamineRegistersInRawFormat>true</ExamineRegistersInRawFormat>
+      <DisableSignals>false</DisableSignals>
+      <EnableAsyncExecutionMode>false</EnableAsyncExecutionMode>
+      <EnableNonStopMode>false</EnableNonStopMode>
+      <MaxBreakpointLimit>0</MaxBreakpointLimit>
+      <EnableVerboseMode>true</EnableVerboseMode>
+    </AdditionalGDBSettings>
+    <LaunchGDBSettings xsi:type="GDBLaunchParametersAttach">
+      <DebuggedProgram>/home/vine/pin-2.14-71313-gcc.4.4.7-linux/intel64/bin/pinbin</DebuggedProgram>
+      <GDBServerPort>2000</GDBServerPort>
+      <AttachMode>AttachByName</AttachMode>
+      <AutoAttachPID>0</AutoAttachPID>
+      <AutoAttachExecutable>graph</AutoAttachExecutable>
+      <NoInitialStop>false</NoInitialStop>
+    </LaunchGDBSettings>
+    <GenerateCtrlBreakInsteadOfCtrlC>false</GenerateCtrlBreakInsteadOfCtrlC>
+    <SuppressArgumentVariablesCheck>false</SuppressArgumentVariablesCheck>
+    <X11WindowMode>Local</X11WindowMode>
+    <KeepConsoleAfterExit>false</KeepConsoleAfterExit>
+    <RunGDBUnderSudo>true</RunGDBUnderSudo>
+    <DeploymentMode>Auto</DeploymentMode>
+    <DeployWhenLaunchedWithoutDebugging>true</DeployWhenLaunchedWithoutDebugging>
+    <StripDebugSymbolsDuringDeployment>false</StripDebugSymbolsDuringDeployment>
+    <SuppressTTYCreation>false</SuppressTTYCreation>
+    <IndexDebugSymbols>false</IndexDebugSymbols>
+    <SymbolIndexDirectory>$(TargetDir)/GDBSymbolCache</SymbolIndexDirectory>
+  </Debug>
+</VisualGDBProjectSettings2>

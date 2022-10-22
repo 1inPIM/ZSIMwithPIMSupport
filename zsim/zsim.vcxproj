@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{B96B24F1-77FD-4C90-938B-B24904F2370C}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="VisualGDBPackageDefinitions">
+    <ToolchainID>com.sysprogs.toolchain.default-gcc</ToolchainID>
+  </PropertyGroup>
+  <ImportGroup Label="VisualGDBFindComponents">
+    <Import Project="$(LOCALAPPDATA)\VisualGDB\FindComponents.props" />
+  </ImportGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.211.55.10\0006\pin\gen;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.211.55.10\0006\pin;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.211.55.10\0004\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.211.55.10\0005\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.211.55.10\0000\include\c++\4.8;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.211.55.10\0000\include\x86_64-linux-gnu\c++\4.8;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.211.55.10\0000\include\c++\4.8\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.211.55.10\0001\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.211.55.10\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.211.55.10\0002\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.211.55.10\0000\include\x86_64-linux-gnu;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.211.55.10\0000\include;.;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)zsim-Debug.vgdbsettings</NMakeOutput>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.47.130\0001\include\c++\4.8;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.47.130\0001\include\x86_64-linux-gnu\c++\4.8;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.47.130\0001\include\c++\4.8\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.47.130\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.47.130\0004\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.47.130\0003\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.47.130\0001\include\x86_64-linux-gnu;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.47.130\0001\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)zsim-Release.vgdbsettings</NMakeOutput>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="access_tracing.cpp" />
+    <ClCompile Include="cache.cpp" />
+    <ClCompile Include="cache_arrays.cpp" />
+    <ClCompile Include="coherence_ctrls.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="contention_sim.cpp" />
+    <ClCompile Include="core_recorder.cpp" />
+    <ClCompile Include="ddr_mem.cpp" />
+    <ClCompile Include="debug_harness.cpp" />
+    <ClCompile Include="debug_zsim.cpp" />
+    <ClCompile Include="decoder.cpp" />
+    <ClCompile Include="detailed_mem.cpp" />
+    <ClCompile Include="detailed_mem_params.cpp" />
+    <ClCompile Include="dramsim_mem_ctrl.cpp" />
+    <ClCompile Include="galloc.cpp" />
+    <ClCompile Include="hash.cpp" />
+    <ClCompile Include="hdf5_stats.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="lookahead.cpp" />
+    <ClCompile Include="memory_hierarchy.cpp" />
+    <ClCompile Include="mem_ctrls.cpp" />
+    <ClCompile Include="monitor.cpp" />
+    <ClCompile Include="network.cpp" />
+    <ClCompile Include="null_core.cpp" />
+    <ClCompile Include="ooo_core.cpp" />
+    <ClCompile Include="ooo_core_recorder.cpp" />
+    <ClCompile Include="parse_vdso.cpp" />
+    <ClCompile Include="partition_mapper.cpp" />
+    <ClCompile Include="pin_cmd.cpp" />
+    <ClCompile Include="prefetcher.cpp" />
+    <ClCompile Include="process_stats.cpp" />
+    <ClCompile Include="process_tree.cpp" />
+    <ClCompile Include="proc_stats.cpp" />
+    <ClCompile Include="scheduler.cpp" />
+    <ClCompile Include="simple_core.cpp" />
+    <ClCompile Include="stats_filter.cpp" />
+    <ClCompile Include="text_stats.cpp" />
+    <ClCompile Include="timing_cache.cpp" />
+    <ClCompile Include="timing_core.cpp" />
+    <ClCompile Include="timing_event.cpp" />
+    <ClCompile Include="trace_driver.cpp" />
+    <ClCompile Include="tracing_cache.cpp" />
+    <ClCompile Include="utility_monitor.cpp" />
+    <ClCompile Include="virt\cpu.cpp" />
+    <ClCompile Include="virt\fs.cpp" />
+    <ClCompile Include="virt\ports.cpp" />
+    <ClCompile Include="virt\syscall_name.cpp" />
+    <ClCompile Include="virt\time.cpp" />
+    <ClCompile Include="virt\timeout.cpp" />
+    <ClCompile Include="virt\virt.cpp" />
+    <ClCompile Include="zsim.cpp" />
+    <ClInclude Include="access_tracing.h" />
+    <ClInclude Include="barrier.h" />
+    <ClInclude Include="bithacks.h" />
+    <ClInclude Include="breakdown_stats.h" />
+    <ClInclude Include="cache.h" />
+    <ClInclude Include="cache_arrays.h" />
+    <ClInclude Include="coherence_ctrls.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="constants.h" />
+    <ClInclude Include="contention_sim.h" />
+    <ClInclude Include="core.h" />
+    <ClInclude Include="core_recorder.h" />
+    <ClInclude Include="cpuenum.h" />
+    <ClInclude Include="cpuid.h" />
+    <ClInclude Include="ddr_mem.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="debug_harness.h" />
+    <ClInclude Include="debug_zsim.h" />
+    <ClInclude Include="decoder.h" />
+    <ClInclude Include="detailed_mem.h" />
+    <ClInclude Include="detailed_mem_params.h" />
+    <ClInclude Include="dramsim_mem_ctrl.h" />
+    <ClInclude Include="event_queue.h" />
+    <ClInclude Include="event_recorder.h" />
+    <ClInclude Include="filter_cache.h" />
+    <ClInclude Include="galloc.h" />
+    <ClInclude Include="g_std\g_list.h" />
+    <ClInclude Include="g_std\g_multimap.h" />
+    <ClInclude Include="g_std\g_string.h" />
+    <ClInclude Include="g_std\g_unordered_map.h" />
+    <ClInclude Include="g_std\g_unordered_set.h" />
+    <ClInclude Include="g_std\g_vector.h" />
+    <ClInclude Include="g_std\stl_galloc.h" />
+    <ClInclude Include="hash.h" />
+    <ClInclude Include="HMC.h" />
+    <ClInclude Include="ideal_arrays.h" />
+    <ClInclude Include="init.h" />
+    <ClInclude Include="intrusive_list.h" />
+    <ClInclude Include="locks.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="memory_hierarchy.h" />
+    <ClInclude Include="mem_ctrls.h" />
+    <ClInclude Include="mtrand.h" />
+    <ClInclude Include="mutex.h" />
+    <ClInclude Include="network.h" />
+    <ClInclude Include="null_core.h" />
+    <ClInclude Include="ooo_core.h" />
+    <ClInclude Include="ooo_core_recorder.h" />
+    <ClInclude Include="pad.h" />
+    <ClInclude Include="partitioner.h" />
+    <ClInclude Include="partition_mapper.h" />
+    <ClInclude Include="part_repl_policies.h" />
+    <ClInclude Include="pin_cmd.h" />
+    <ClInclude Include="prefetcher.h" />
+    <ClInclude Include="prio_queue.h" />
+    <ClInclude Include="process_stats.h" />
+    <ClInclude Include="process_tree.h" />
+    <ClInclude Include="proc_stats.h" />
+    <ClInclude Include="profile_stats.h" />
+    <ClInclude Include="rdtsc.h" />
+    <ClInclude Include="repl_policies.h" />
+    <ClInclude Include="scheduler.h" />
+    <ClInclude Include="simple_core.h" />
+    <ClInclude Include="slab_alloc.h" />
+    <ClInclude Include="stats.h" />
+    <ClInclude Include="stats_filter.h" />
+    <ClInclude Include="str.h" />
+    <ClInclude Include="tick_event.h" />
+    <ClInclude Include="timing_cache.h" />
+    <ClInclude Include="timing_core.h" />
+    <ClInclude Include="timing_event.h" />
+    <ClInclude Include="trace_driver.h" />
+    <ClInclude Include="tracing_cache.h" />
+    <ClInclude Include="utility_monitor.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="virt\common.h" />
+    <ClInclude Include="virt\patchdefs.h" />
+    <ClInclude Include="virt\port_virtualizer.h" />
+    <ClInclude Include="virt\syscall_name.h" />
+    <ClInclude Include="virt\time_conv.h" />
+    <ClInclude Include="virt\virt.h" />
+    <ClInclude Include="weave_md1_mem.h" />
+    <ClInclude Include="zsim.h" />
+    <None Include="Makefile" />
+    <None Include="debug.mak" />
+    <None Include="release.mak" />
+    <None Include="simple.cfg" />
+    <None Include="simplepim.cfg" />
+    <None Include="zsim-Debug.vgdbsettings" />
+    <None Include="zsim-Release.vgdbsettings" />
+    <None Include="zsim.out" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{c0a1f70f-a254-4fe9-bc84-1a3efdf9e2e2}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{4acfafab-1a92-4411-8a42-f8b0c0b630e5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{a65c78fe-711f-41c9-abe3-dac18b842fc7}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{a8d6f4c8-ae9f-4742-a9c7-a01328f5d9fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{3ac9b592-fdd6-49f9-9bd6-f98dd9041ec2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="zsim.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClInclude Include="zsim.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="zsim-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="zsim-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="tracing_cache.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="utility_monitor.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="virt\cpu.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="virt\fs.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="virt\ports.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="virt\syscall_name.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="virt\time.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="virt\timeout.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="virt\virt.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="access_tracing.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="cache.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="cache_arrays.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="coherence_ctrls.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="contention_sim.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="core_recorder.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ddr_mem.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug_harness.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug_zsim.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="detailed_mem.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="detailed_mem_params.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="dramsim_mem_ctrl.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="galloc.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="hash.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="hdf5_stats.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="init.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lookahead.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="mem_ctrls.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="memory_hierarchy.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="monitor.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="network.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="null_core.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ooo_core.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ooo_core_recorder.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="parse_vdso.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="partition_mapper.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="pin_cmd.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="prefetcher.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="proc_stats.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="process_stats.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="process_tree.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="scheduler.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_core.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="stats_filter.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="text_stats.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="timing_cache.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="timing_core.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="timing_event.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="trace_driver.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="simple.cfg" />
+    <None Include="zsim.out" />
+    <None Include="simplepim.cfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tracing_cache.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility_monitor.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="weave_md1_mem.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="g_std\g_list.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="g_std\g_multimap.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="g_std\g_string.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="g_std\g_unordered_map.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="g_std\g_unordered_set.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="g_std\g_vector.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="g_std\stl_galloc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="virt\common.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="virt\patchdefs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="virt\port_virtualizer.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="virt\syscall_name.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="virt\time_conv.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="virt\virt.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="access_tracing.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="barrier.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="bithacks.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="breakdown_stats.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="cache.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="cache_arrays.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="coherence_ctrls.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="contention_sim.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="core.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="core_recorder.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpuenum.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpuid.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ddr_mem.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="debug_harness.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="debug_zsim.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="decoder.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="detailed_mem.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="detailed_mem_params.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="dramsim_mem_ctrl.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="event_queue.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="event_recorder.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="filter_cache.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="galloc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="hash.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ideal_arrays.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="init.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="intrusive_list.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="locks.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="mem_ctrls.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="memory_hierarchy.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="mtrand.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="mutex.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="network.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="null_core.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ooo_core.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ooo_core_recorder.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="pad.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="part_repl_policies.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="partition_mapper.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="partitioner.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="pin_cmd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="prefetcher.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="prio_queue.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="proc_stats.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="process_stats.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="process_tree.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="profile_stats.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdtsc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="repl_policies.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="scheduler.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_core.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="slab_alloc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="stats.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="stats_filter.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="str.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tick_event.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="timing_cache.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="timing_core.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="timing_event.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="trace_driver.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="HMC.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
